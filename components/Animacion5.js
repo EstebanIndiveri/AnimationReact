@@ -13,6 +13,13 @@ const Animacion5 = () => {
         }).start();
     };
     const soltarBtn = ()=>{
+        Animated.spring(animation,{
+            toValue:1,
+            useNativeDriver:false,
+            friction:4,//low
+            tension:60
+
+        }).start();
     }
 
     const estiloAnimation={
